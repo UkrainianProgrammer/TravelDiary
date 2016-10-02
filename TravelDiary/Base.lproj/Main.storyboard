@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TravelDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B8w-wN-NnK">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZlA-pk-a9r" userLabel="InsideScroll">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="580"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cstat" translatesAutoresizingMaskIntoConstraints="NO" id="ifg-Wr-8B8">
+                                                <rect key="frame" x="0.0" y="66" width="375" height="143"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="History 📖" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zsa-sY-piA">
+                                                <rect key="frame" x="8" y="230" width="359" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Food 🍔" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhT-Lx-old">
+                                                <rect key="frame" x="8" y="408" width="359" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8UV-5A-aJK">
+                                                <rect key="frame" x="8" y="444" width="359" height="128"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <string key="text">1. Napa Flats Wood Fired Kitchen
+	1727 Texas Ave S
+	College Station, TX 77840
+	979-383-2500
+
+2. The Republic
+	701 University Dr E
+	College Station, TX 77840
+	979-260-4120
+	
+3. Ohana Korean Grill
+	2501 S Texas Ave
+	College Station, TX 77840
+	
+4. Mad Taco
+	404 Jane St
+	College Station, TX 77840
+	979-704-6266
+	
+5. Mickey's Sliders
+	700 University Dr E
+	College Station, TX 77840
+	979-846-4488</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to College Station!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1K-Ff-V0U">
+                                                <rect key="frame" x="8" y="23" width="359" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dSE-Ec-WZS">
+                                                <rect key="frame" x="8" y="259" width="359" height="128"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <mutableString key="text">The origins of College Station date from 1860, when the Houston and Texas Central Railway began to build through the region. 
+Eleven years later, the site was chosen as the location for the proposed Agricultural and Mechanical College of Texas, a land-grant school. 
+In 1876, as the nation celebrated its centennial, the school (renamed Texas A&amp;M University in 1963) opened its doors as the first public institution of higher education in the state of Texas.
+The population of College Station grew slowly, reaching 350 in 1884 and 391 at the turn of the century. However, during this time, transportation improvements took place in the town. 
+In 1900, the I&amp;GN Railroad was extended to College Station (the line was abandoned by the Missouri Pacific Railroad Company in 1965), and 10 years later, electric interurban service was established between Texas A&amp;M and the neighboring town of Bryan. 
+The interurban was replaced by a city bus system in the 1920s. In 1930, the community to the north of College Station, known as North Oakwood, was incorporated as part of Bryan. 
+College Station did not incorporate until 1938 with John H. Binney as the first mayor. Within a year, the city established a zoning commission, and by 1940, the population had reached 2,184.
+The city grew under the leadership of Ernest Langford, called by some the "Father of College Station", who began a 26-year stretch as mayor in 1942. Early in his first term, the city adopted a council-manager system of city government.
+Population growth accelerated following World War II as the nonstudent population reached 7,898 in 1950, 11,396 in 1960, 17,676 in 1970, 30,449 in 1980, 52,456 in 1990, and 67,890 in 2000. 
+The population for the Bryan-College Station metropolitan area will range from an estimated 250,846 to 271,773 by 2030.
+In the 1990s, College Station and Texas A&amp;M University drew national attention when the George Bush Presidential Library opened in 1997 and, more tragically, when 12 people were killed and 27 injured when the Aggie Bonfire collapsed while being constructed in 1999.</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="800" id="RF5-12-eri"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Entertainment 🎭" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJf-ME-JEb">
+                                        <rect key="frame" x="8" y="583" width="359" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Vb1-IL-vch">
+                                        <rect key="frame" x="8" y="612" width="359" height="128"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">1. Perrine Winery
+	900 Harvery Rd
+	College Station, TX 77840
+	979-703-1843
+	
+2. Grand Station Entertainment
+	2400 Earl Rudder Fwy
+	College Station, TX 77840
+	979-696-1100
+	
+3. Kyle Field
+	198 Joe Routt Blvd
+	College Station, TX 77840
+	979-845-5129
+	
+4. Reed Arena
+	730 Olsen Blvd
+	College Station, TX 77843
+	979-862-7334
+	
+5. George Bush Library
+	1000 George Bush Dr W
+	College Station, TX 77845
+	979-691-4000</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ZlA-pk-a9r" firstAttribute="leading" secondItem="B8w-wN-NnK" secondAttribute="leading" id="2mG-z4-PrQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZlA-pk-a9r" secondAttribute="bottom" id="TSZ-T9-kb1"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZlA-pk-a9r" secondAttribute="trailing" id="cNU-Y4-ehe"/>
+                                    <constraint firstItem="ZlA-pk-a9r" firstAttribute="top" secondItem="B8w-wN-NnK" secondAttribute="top" id="utx-ck-3C6"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="B8w-wN-NnK" secondAttribute="trailing" id="4Uw-xH-1Tf"/>
+                            <constraint firstItem="B8w-wN-NnK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IoE-Vw-MeE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="B8w-wN-NnK" secondAttribute="bottom" id="b1y-vz-B0m"/>
+                            <constraint firstItem="B8w-wN-NnK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="dG5-yU-faf"/>
+                            <constraint firstItem="ZlA-pk-a9r" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="hKb-OY-Pio"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="294.5" y="198.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cstat" width="700" height="400"/>
+    </resources>
+</document>
